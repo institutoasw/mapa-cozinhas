@@ -3,19 +3,21 @@
 
 @import "main";
 
-$fontColor: #f4d6a2;
-$fontColorMenu: #2A4D3C; /*mesma cor da Section2*/
+$fontColor: #000;
+$fontColorMenu: #000; /*mesma cor da Section2*/
+$fontColorMenuHover: #282a2c; /*mesma cor da Section2*/
+$fontWithDarkBg: #fff;
 $bgSocialbar: #88A396; /*usada tb no bg do menu dropdown*/
-$bgMenu: #608573;
-$bgSection1: #386650;
-$bgSection2: #2A4D3C;
-$bgSection3: #F24F15;
+$bgMenu: #fff;
+$bgSection1: #fff;
+$bgSection2: #0e8342;
+$bgSection3: #eeee;
 $bgSection4: #F57244;
 $bgSection5: #A03804;
 $bgSection6: #ff4646;
 $bgSection7: #FF6B6B;   /*usada nas sections pares da página Boletins*/
 $bgSectionanos: #A32B00;   /*usada no background dos Anos na página Cursos*/
-$bgFooter: #782A03;
+$bgFooter: #fff;
 $bgButton: #B63B10;
 $bgMap: #edbe7a;
 /*$bgGallery: #fddbba;*/
@@ -74,11 +76,12 @@ img.logomenu:hover {
 a.nav-link {
 	font-family: BreeSerifSemiBold;
     color: $fontColorMenu;
-	/* font-weight: bold; */
+    font-size: 16px;
+	font-weight: 500 !important;
 }
 
 a:hover.nav-link {
-    color: $fontColor;
+    color: $fontColorMenuHover;
 	/* font-weight: bold; */
 }
 
@@ -394,4 +397,54 @@ div.mapboxgl-popup-content a{
 
 .small, small {
     font-size: 90%;
+}
+
+.fontWithDarkBg 
+{
+    color: $fontWithDarkBg;
+}
+
+.container-fluid a.fontWithDarkBg 
+{
+    color: $fontWithDarkBg;
+}
+
+.home {
+    .moranguito {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        .row {
+            gap: 21px;
+            .desc {
+                justify-content: center !important;
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .home {
+        .desc {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.section-footer {
+    border-top: 1px solid rgba(0,0,0,0.4);
+    padding: 10px 0 10px 0;
+    .col-md-4 {
+        img {
+            max-width: 180px;
+        }
+    }
 }

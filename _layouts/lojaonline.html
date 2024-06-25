@@ -36,23 +36,23 @@
 		{% include menu.html %}
     <div class='flex-parent viewport-full relative scroll-hidden bg-white' style="height: calc(100vh - 121px) !important;">
   {% else %}
-    <div class='flex-parent viewport-full relative scroll-hidden bg-white'> 
-  {% endif %}		  
-    
-    
-    
-    
-    
-    
+    <div class='flex-parent viewport-full relative scroll-hidden bg-white'>
+  {% endif %}
+
+
+
+
+
+
         <div class='flex-child w-full w360-mm absolute static-mm left bottom scroll-auto z1'>
-            <div class='flex-parent flex-parent--column viewport-third bg-white'>            
+            <div class='flex-parent flex-parent--column viewport-third bg-white'>
                 <div class='flex-child flex-child--grow bg-white'>
                     <!-- <div id="sidebarA" -->
                         <!-- class="flex-parent flex-parent--column-mm flex-parent--center-main theme py12 px12 viewport-third"> -->
                     <div id="sidebarA"
-                        class="flex-parent flex-parent--column flex-parent--center-main theme py12 px12">
+                        class="flex-parent flex-parent--column flex-parent--center-main theme py12 px12 ">
                         <!-- <h3 id='title' class='txt-l-mm txt-m txt-bold mb6 mr0 align-center block'> -->
-                        <h3 id='title' class='txt-l-mm txt-m mb6 mr0 align-center block'>
+                        <h3 id='title' class='txt-l-mm txt-m mb6 mr0 align-center block fontWithDarkBg'>
                         </h3>
                         <p id='description' class='txt-s py0 none block-mm'>
                         </p>
@@ -68,7 +68,7 @@
                         </div>
                         <!-- <div id='modal' -->
                             <!-- class='absolute top right bottom left scroll-auto hide-visually flex-parent flex-parent--center-main mt120-mm'> -->
-                        <div id='modal'    
+                        <div id='modal'
                             class='scroll-auto hide-visually'>
                             <div class='pt12'>
                                 <div class='flex-child section2 round relative'>
@@ -101,14 +101,14 @@
         {% if page.embed == 0 %}
         <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds map-menu' id='map'>
         {% else %}
-        <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds' id='map'> 
-        {% endif %}        
+        <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds' id='map'>
+        {% endif %}
         </div>
         <div id="loading-background" class='flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left z5'>
             <div id="spinner" class='flex-child loading'></div>
         </div>
 
-        
+
 
     </div>
 
