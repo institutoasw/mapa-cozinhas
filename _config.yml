@@ -3,8 +3,8 @@ title: MapaCozinhas
 subtitle: 
 
 # URL
-url: https://mapacozinhas-rs.org.br/mapa-cozinhas
-baseurl: '/mapa-cozinhas/'
+url: https://mapacozinhas-rs.org.br/
+baseurl: '/'
 permalink: :title/
 include: ['_pages']
 
