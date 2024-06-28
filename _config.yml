@@ -3,7 +3,7 @@ title: MapaCozinhas
 subtitle: 
 
 # URL
-url: https://institutoasw.github.io/mapa-cozinhas
+url: https://mapacozinhas-rs.org.br/mapa-cozinhas
 baseurl: '/mapa-cozinhas/'
 permalink: :title/
 include: ['_pages']
