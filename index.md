@@ -4,20 +4,15 @@ title: 'Mapa das cozinhas'
 section1:
     titulo1: <a href="lojaonline"> Conheça as <br> cozinhas comunitárias <br> do Rio Grande do Sul</a>
 section2:
-    titulo: Sobre projeto
-    texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.'
+  titulo: Sobre o projeto
+  texto: "O mapeamento das cozinhas solidárias é uma iniciativa do CONSEA-RS com apoio do Instituto Aaron Swartz para fornecer informação de qualidade para a população.
+  
+  O site é desenvolvido com solidariedade e software livre, a partir de um fork de um projeto da SILO."
 section3:
     titulo: ''
     texto:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
+        Sabemos que diversas iniciativas intensificaram suas atividades e outras surgiram na esteira das enchentes, para cadastrar os dados da sua iniciativa preencha o formulário abaixo.
+
+        O CONSEAR entrará em contato para validar os dados e publicar a sua cozinha no mapa.
     botao: cadastre sua cozinha aqui!
 ---
