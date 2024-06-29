@@ -22,7 +22,7 @@ const config = {
   popupTxt:{
     linkTelegram: 'Compre pelo Telegram!',
     linkWhatsapp: 'Compre pelo Whatsapp',
-    msgWhats: 'Te encontrei no CaipiratechLAB e eu tenho interesse em comprar de você',
+    msgWhats: 'Te encontrei no Mapa das Cozinhas Solidárias do CONSEA-RS e tenho uma pergunta. Pode me ajudar?',
     inativo: 'INATIVO',
     //msgWhatsFormated: 'Te%20encontrei%20no%20CaipiratechLAB%20e%20eu%20tenho%20interesse%20em%20comprar%20de%20voc%C3%AA',
   },
