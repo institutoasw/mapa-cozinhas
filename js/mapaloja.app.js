@@ -886,7 +886,6 @@ map.on('load', () => {
             map.loadImage('../media/mapa/verde.png', (error, image) => {
               if (error) reject(error);
               //change size of icon when adding to the map
-              image = map.resizeImage(image, 50, 50);
               map.addImage('verde', image);
               
               resolve();
