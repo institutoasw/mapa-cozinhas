@@ -7,7 +7,7 @@ section2:
   titulo: Sobre o projeto
   texto: "O mapeamento das cozinhas solidárias é uma iniciativa do CONSEA-RS com apoio do Instituto Aaron Swartz para fornecer informação de qualidade para a população.
   
-  O site é desenvolvido com solidariedade e software livre, a partir de um fork de um projeto da SILO."
+  O site é desenvolvido com solidariedade e software livre, a partir de um fork de um projeto da <a href='https://silo.org.br/'> Silo – Arte e Latitude Rural </a>."
 section3:
     titulo: ''
     texto:
