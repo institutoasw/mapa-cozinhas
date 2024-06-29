@@ -17,7 +17,7 @@ const config = {
   title: 'Busca',
   description:
     '',
-  sideBarInfo: ['Nome', 'Produtos', 'Regiao', 'distance', 'Contato', 'whats'],
+  sideBarInfo: ['Nome', 'Dias de funcionamento', 'Região atendida', 'Contato', 'whats'],
   popupInfo: ['Nome',],
   popupTxt:{
     linkTelegram: 'Compre pelo Telegram!',
