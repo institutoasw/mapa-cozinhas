@@ -23,96 +23,87 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
     <script src='https://npmcdn.com/csv2geojson@latest/csv2geojson.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel='stylesheet' href="../assets/css/mapaloja.style.css" type='text/css'/>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"
+        integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel='stylesheet' href="../assets/css/mapaloja.style.css" type='text/css' />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <!-- swipebox includes-->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/swipebox.min.css">
     <script src="{{ site.baseurl }}/js/jquery.swipebox.min.js"></script>
 </head>
 
 <body>
-  {% if page.embed == 0 %}
-		{% include menu.html %}
-    <div class='flex-parent viewport-full relative scroll-hidden bg-white' style="height: calc(100vh - 121px) !important;">
-  {% else %}
-    <div class='flex-parent viewport-full relative scroll-hidden bg-white'>
-  {% endif %}
-
-
-
-
-
-
-        <div class='flex-child w-full w360-mm absolute static-mm left bottom scroll-auto z1'>
-            <div class='flex-parent flex-parent--column viewport-third bg-white'>
-                <div class='flex-child flex-child--grow bg-white'>
-                    <!-- <div id="sidebarA" -->
+    {% if page.embed == 0 %}
+    {% include menu.html %}
+    <div class='flex-parent viewport-full relative scroll-hidden bg-white'
+        style="height: calc(100vh - 121px) !important;">
+        {% else %}
+        <div class='flex-parent viewport-full relative scroll-hidden bg-white'>
+            {% endif %}
+            <div class='flex-child w-full w360-mm absolute static-mm left bottom scroll-auto z1'>
+                <div class='flex-parent flex-parent--column viewport-third bg-white'>
+                    <div class='flex-child flex-child--grow bg-white'>
+                        <!-- <div id="sidebarA" -->
                         <!-- class="flex-parent flex-parent--column-mm flex-parent--center-main theme py12 px12 viewport-third"> -->
-                    <div id="sidebarA"
-                        class="flex-parent flex-parent--column flex-parent--center-main theme py12 px12 ">
-                        <!-- <h3 id='title' class='txt-l-mm txt-m txt-bold mb6 mr0 align-center block'> -->
-                        <h3 id='title' class='txt-l-mm txt-m mb6 mr0 align-center block fontWithDarkBg'>
-                        </h3>
-                        <p id='description' class='txt-s py0 none block-mm'>
-                        </p>
-                        <div class="flex-parent flex-parent--center-main relative right top mt0 pt6">
-                            <!-- <button id='filterResults' class='txt-bold btn btn--stroke mr0-mm mr12 px18-mm px6'> -->
-                            <!-- <button id='filterResults' class='txt-bold btn btn--stroke mr0 px18-mm px6'> -->
-                            <button id='filterResults' class='btn btn--stroke mr0 px18-mm px6'>
-                                <svg class='icon inline-block align-middle h24 w24'>
-                                    <use xlink:href='#icon-filter' /></svg>
-                                <!-- <p class="inline-block-mm align-middle remove none">Mostrar Filtros</p> -->
-                                <p class="inline-block align-middle">Mostrar Filtros</p>
-                            </button>
-                        </div>
-                        <!-- <div id='modal' -->
+                        <div id="sidebarA"
+                            class="flex-parent flex-parent--column flex-parent--center-main theme py12 px12 ">
+                            <!-- <h3 id='title' class='txt-l-mm txt-m txt-bold mb6 mr0 align-center block'> -->
+                            <h3 id='title' class='txt-l-mm txt-m mb6 mr0 align-center block fontWithDarkBg'>
+                            </h3>
+                            <p id='description' class='txt-s py0 none block-mm'>
+                            </p>
+                            <div class="flex-parent flex-parent--center-main relative right top mt0 pt6">
+                                <!-- <button id='filterResults' class='txt-bold btn btn--stroke mr0-mm mr12 px18-mm px6'> -->
+                                <!-- <button id='filterResults' class='txt-bold btn btn--stroke mr0 px18-mm px6'> -->
+                                <button id='filterResults' class='btn btn--stroke mr0 px18-mm px6'>
+                                    <svg class='icon inline-block align-middle h24 w24'>
+                                        <use xlink:href='#icon-filter' />
+                                    </svg>
+                                    <!-- <p class="inline-block-mm align-middle remove none">Mostrar Filtros</p> -->
+                                    <p class="inline-block align-middle">Mostrar Filtros</p>
+                                </button>
+                            </div>
+                            <!-- <div id='modal' -->
                             <!-- class='absolute top right bottom left scroll-auto hide-visually flex-parent flex-parent--center-main mt120-mm'> -->
-                        <div id='modal'
-                            class='scroll-auto hide-visually'>
-                            <div class='pt12'>
-                                <div class='flex-child section2 round relative'>
-                                    <button id='exitButton' class='absolute top right px12 py12'>
-                                        <svg class='icon link color-white'>
-                                            <use xlink:href='#icon-close'></use>
-                                        </svg>
-                                    </button>
-                                    <div class='px12 py12'>
-                                        <form id="filters" onkeydown="return event.key != 'Enter';"></form>
-                                        <!-- <div class='align-center py12'></div> -->
-                                        <div class="flex-parent flex-parent--center-main pt6">
-                                            <button id="removeFilters" class="btn">Resetar Filtros</button>
+                            <div id='modal' class='scroll-auto hide-visually'>
+                                <div class='pt12'>
+                                    <div class='flex-child section2 round relative'>
+                                        <button id='exitButton' class='absolute top right px12 py12'>
+                                            <svg class='icon link color-white'>
+                                                <use xlink:href='#icon-close'></use>
+                                            </svg>
+                                        </button>
+                                        <div class='px12 py12'>
+                                            <form id="filters" onkeydown="return event.key != 'Enter';"></form>
+                                            <!-- <div class='align-center py12'></div> -->
+                                            <div class="flex-parent flex-parent--center-main pt6">
+                                                <button id="removeFilters" class="btn">Resetar Filtros</button>
+                                            </div>
+
                                         </div>
 
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
-
+                        <!-- <div id="listings" class="flex-child viewport-twothirds py12 px12 listings scroll-auto"></div> -->
+                        <div id="listings" class="flex-child py12 px12 listings viewport-twothirds-mm"></div>
                     </div>
-                    <!-- <div id="listings" class="flex-child viewport-twothirds py12 px12 listings scroll-auto"></div> -->
-                    <div id="listings" class="flex-child py12 px12 listings viewport-twothirds-mm"></div>
-
+                </div>
+            </div>
+            {% if page.embed == 0 %}
+            <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds map-menu' id='map'>
+                {% else %}
+                <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds' id='map'>
+                    {% endif %}
+                </div>
+                <div id="loading-background"
+                    class='flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left z5'>
+                    <div id="spinner" class='flex-child loading'></div>
                 </div>
             </div>
         </div>
-        {% if page.embed == 0 %}
-        <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds map-menu' id='map'>
-        {% else %}
-        <div class='flex-child flex-child--grow w-auto viewport-full-mm viewport-twothirds' id='map'>
-        {% endif %}
-        </div>
-        <div id="loading-background" class='flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left z5'>
-            <div id="spinner" class='flex-child loading'></div>
-        </div>
-
-
-
-    </div>
-
-    </div>
 </body>
 
 <script>
