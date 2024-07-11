@@ -20,8 +20,8 @@ const config = {
   sideBarInfo: ['Nome', 'Dias de funcionamento', 'Região atendida', 'Contato', 'whats'],
   popupInfo: ['Nome',],
   popupTxt:{
-    linkTelegram: 'Compre pelo Telegram!',
-    linkWhatsapp: 'Compre pelo Whatsapp',
+    linkTelegram: 'Entre em contato pelo Telegram!',
+    linkWhatsapp: 'Entre em contato pelo Whatsapp',
     msgWhats: 'Te encontrei no Mapa das Cozinhas Solidárias do CONSEA-RS e tenho uma pergunta. Pode me ajudar?',
     inativo: 'INATIVO',
     //msgWhatsFormated: 'Te%20encontrei%20no%20CaipiratechLAB%20e%20eu%20tenho%20interesse%20em%20comprar%20de%20voc%C3%AA',
