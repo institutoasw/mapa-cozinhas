@@ -101,8 +101,8 @@ function sellLinks(currentFeature){
 
   //caso o estabelecimento tenha whatsapp cadastrado no google sheets, inclui o ícone e link para o whatsapp no retorno
   if (whatsapp != ""){
-    retorno += '<a class="link-whats" href="https://wa.me/55' + whatsapp + '?text='+ encodeURIComponent(config.popupTxt.msgWhats)+'" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true"></i> '+ config.popupTxt.linkWhatsapp +'</a>'; //link padrão que abre o whatsapp no celular e em alguns navegadores
-    retorno += '<a class="link-whats" href="https://api.whatsapp.com/send/?phone=55' + whatsapp + '&text='+ encodeURIComponent(config.popupTxt.msgWhats)+'&app_absent=1" target="_blank"> (Web)</a>'; //link que abre o whatsapp web em navegadores que não suportam o link padrão
+    retorno += '<a class="link-whats" href="https://wa.me/55' + whatsapp + '?text='+ encodeURIComponent(config.popupTxt.msgWhats)+'" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true"></i> '+ whatsapp +'</a>'; //link padrão que abre o whatsapp no celular e em alguns navegadores
+    // retorno += '<a class="link-whats" href="https://api.whatsapp.com/send/?phone=55' + whatsapp + '&text='+ encodeURIComponent(config.popupTxt.msgWhats)+'&app_absent=1" target="_blank"> (Web)</a>'; //link que abre o whatsapp web em navegadores que não suportam o link padrão
   }  
   
   //caso o estabelecimento tenha telegram cadastrado no google sheets, inclui o ícone e link para o telegram no retorno
