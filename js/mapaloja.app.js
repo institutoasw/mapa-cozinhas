@@ -65,7 +65,7 @@ function loadCard(currentFeature) {
   // }
   
   if(currentFeature.properties.Imagem == ""){
-    description = '<img src="../media/images/embreve.jpg" class="w-100">';
+    // description = '<img src="../media/images/embreve.jpg" class="w-100">';
   }else{
     if (ativoteste != "Sim"){
       description = '<img src="../media/cards/thumbs/' + imagem + '.jpg" class="w-100 img-inativo">';
@@ -87,7 +87,7 @@ function loadCard(currentFeature) {
       
   }
   //Exibe Região como texto abaixo da imagem
-  description += 'Região:<br />' + regiao;    
+  // description += 'Região:<br />' + regiao;
   
   return description;  
 }
