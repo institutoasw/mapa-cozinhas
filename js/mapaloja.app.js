@@ -914,7 +914,7 @@ map.on('load', () => {
               'visibility': 'visible',
               'icon-image': ['match', ['get', 'AtivoTeste'], 'Sim', 'verde', 'vermelho'],
               'icon-anchor': 'bottom',
-              'icon-allow-overlap': true,
+              'icon-allow-overlap': false,
               'symbol-sort-key': ['match', ['get', 'AtivoTeste'], 'Sim', 1, 0],
             },
           });          
